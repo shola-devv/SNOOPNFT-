@@ -1,0 +1,9 @@
+{
+  "name": "SNOOP NFT #5 STAR",
+  "description": "Star is a call for your inner cosmos to be unravelled",
+  "image": "ipfs://bafybeih5aj6zinpzee6zfhfn3afgflvkkmh5ueqbwix4puu675fln7mpt4/5.png",
+  "attributes": [
+    { "trait_type": "style", "value": "starry and technological" },
+    { "trait_type": "Rarity", "value": "Common" }
+  ]
+}

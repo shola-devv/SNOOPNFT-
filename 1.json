@@ -1,0 +1,9 @@
+{
+  "name": "SNOOP NFT #1 ARTIST",
+  "description": "Artist is a call for your inner creative to be unravelled",
+  "image": "ipfs://bafybeih5aj6zinpzee6zfhfn3afgflvkkmh5ueqbwix4puu675fln7mpt4/1.png",
+  "attributes": [
+    { "trait_type": "style", "value": "green and cool" },
+    { "trait_type": "Rarity", "value": "Common" }
+  ]
+}

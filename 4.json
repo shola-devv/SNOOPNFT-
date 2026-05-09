@@ -1,0 +1,9 @@
+{
+  "name": "SNOOP NFT #4 EXPLORER",
+  "description": "Explorer is a call for your inner adventurer to be unravelled",
+  "image": "ipfs://bafybeih5aj6zinpzee6zfhfn3afgflvkkmh5ueqbwix4puu675fln7mpt4/4.png",
+  "attributes": [
+    { "trait_type": "style", "value": "galaxyblue and mysterious" },
+    { "trait_type": "Rarity", "value": "Common" }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "SNOOP NFT #2 DEGEN",
+  "description": "Degen is a call for your inner degenerate to be unravelled",
+  "image": "ipfs://bafybeih5aj6zinpzee6zfhfn3afgflvkkmh5ueqbwix4puu675fln7mpt4/2.png",
+  "attributes": [
+    { "trait_type": "style", "value": "red and edgy" },
+    { "trait_type": "Rarity", "value": "Common" }
+  ]
+}
