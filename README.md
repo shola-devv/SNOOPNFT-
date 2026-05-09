@@ -1,59 +1,85 @@
 # SnoopNFT
 
-SnoopNFT is a minimal ERC-721 NFT contract built with Solidity and OpenZeppelin.
+A minimal ERC-721 NFT smart contract built with Solidity and OpenZeppelin libraries.
 
-## Features
+## Overview
 
-- ERC721Enumerable support
-- Mint NFTs for `0.01 ETH`
-- Max supply of `10 NFTs`
-- IPFS metadata support
-- Pause/unpause minting
-- Owner withdrawal function
+SnoopNFT is an NFT collection contract that enables minting of non-fungible tokens on the Ethereum blockchain. The contract includes enumerable support, configurable metadata, and administrative controls for managing the collection.
 
 ## Contract Details
 
-- Name: `SnoopNFT`
-- Symbol: `SNOOP`
-- Max Supply: `10`
-- Mint Price: `0.01 ETH`
+| Property | Value |
+|----------|-------|
+| Name | SnoopNFT |
+| Symbol | SNOOP |
+| Standard | ERC-721 Enumerable |
+| Max Supply | 10 NFTs |
+| Mint Price | 0.01 ETH |
+| Contract Address | 0x33017A80c991e707458e0163dAfC9d5B92123e4B |
 
-## Mint
+## Features
 
-Users can mint one NFT per transaction: mint()
+- ERC721Enumerable support for token enumeration
+- Mint NFTs for 0.01 ETH per transaction
+- Maximum supply limit of 10 NFTs
+- IPFS-based metadata support
+- Pause/unpause functionality to control minting
+- Owner withdrawal function for fund management
 
-## Requirements
+## Minting
 
--Contract must not be paused
--Correct ETH amount must be sent
--Max supply must not be exceeded
--Metadata
+### How to Mint
 
-## Metadata is generated using:
+Users can mint NFTs by calling the `mint()` function. Each transaction allows minting of one NFT.
 
+### Requirements
+
+To successfully mint an NFT, the following conditions must be met:
+
+- Contract must not be paused
+- Correct ETH amount (0.01 ETH) must be sent with the transaction
+- Total minted NFTs must not exceed the maximum supply of 10
+- Token metadata must be available
+
+### Metadata
+
+Metadata is constructed using the following format:
+
+```
 baseURI + tokenId + ".json"
+```
 
--Example: ipfs://bafybeid2zmpbpubntnyrygvooo56q3thbcpucz77b7hgtqzgx7mbh6eoxu/
+**Example base URI:**
+```
+ipfs://bafybeid2zmpbpubntnyrygvooo56q3thbcpucz77b7hgtqzgx7mbh6eoxu/
+```
 
--metadata files are included in the folder, named 1-5
+Metadata files are included in the repository and correspond to token IDs 1-5.
 
+## Administrative Functions
 
-## Owner Functions
--Pause / Unpause: setPaused(bool val)
--Withdraw Contract Funds: withdraw()
+### Pause/Unpause Minting
+```
+setPaused(bool val)
+```
+Toggle minting availability. When paused, users cannot mint new NFTs.
 
-##  conract Address 
+### Withdraw Funds
+```
+withdraw()
+```
+Transfer contract balance to the contract owner. Only callable by the owner.
 
-0x33017A80c991e707458e0163dAfC9d5B92123e4B
+## Technology Stack
 
-## Built With
+- **Solidity** - Smart contract language
+- **OpenZeppelin Contracts** - Standard-compliant contract implementations
+- **Ethereum** - Blockchain network
 
-Solidity
-OpenZeppelin Contracts
+## Development
+
+This project implements the ERC-721 standard with enumerable extensions as defined by OpenZeppelin. The contract includes safety checks and owner-controlled mechanisms for managing the NFT collection lifecycle.
 
 ## License
 
 MIT
-
-
-
