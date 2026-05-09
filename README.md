@@ -1,6 +1,6 @@
 # SnoopNFT
 
-A minimal ERC-721 NFT smart contract built with Solidity and OpenZeppelin libraries.
+An ERC-721 NFT smart contract built with Solidity and OpenZeppelin libraries for the SNOOP NFT collection.
 
 ## Overview
 
